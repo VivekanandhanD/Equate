@@ -1,0 +1,2 @@
+# Equate
+Expense management system
