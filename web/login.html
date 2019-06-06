@@ -1,0 +1,36 @@
+<!--
+	Author : D.Vivekanandhan
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Equate</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="war/ico/favicon.ico" type="image/x-icon">
+  	<link rel="stylesheet" href="components/plugins/Bootstrap/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="components/css/stylesheet.css">
+  	<link rel="stylesheet" href="components/plugins/font-awesome/css/font-awesome.min.css">
+  	<script src="components/plugins/jQuery/jquery.min.js"></script>
+  	<script src="components/plugins/Bootstrap/js/bootstrap.min.js"></script>
+  	<script src="components/js/login.js"></script>
+</head>
+<body class="login">
+<div class="login">
+<form>
+    <div id="usg" class="input-group">
+      <span class="input-group-addon" style="background-color:grey"><i class="glyphicon glyphicon-user"></i></span>
+      <input id="username" type="text" class="form-control" name="username" placeholder="User Name" onkeydown="if (event.keyCode == 13) document.getElementById('login').click()" autofocus>
+    </div>
+    <div style="height:5px"></div>
+    <div id="psg" class="input-group">
+      <span class="input-group-addon" style="background-color:grey"><i class="glyphicon glyphicon-lock"></i></span>
+      <input id="password" type="password" class="form-control" name="password" placeholder="Password" onkeydown="if (event.keyCode == 13) document.getElementById('login').click()">
+    </div>
+    <div style="height:10px"></div>
+    <button id="login" type="button" class="btn btn-block btn-primary" onclick="logi()">Login</button>
+</form>
+</div>
+
+</body>
+</html>

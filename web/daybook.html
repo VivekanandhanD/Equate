@@ -1,0 +1,74 @@
+<!--
+	Author : D.Vivekanandhan
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Equate</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="components/plugins/Bootstrap/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="components/css/stylesheet.css">
+  	<link rel="stylesheet" href="components/plugins/font-awesome/css/font-awesome.min.css">
+  	
+  	
+  	<link rel="stylesheet" href="components/plugins/jquery.jqGrid-4.5.4/css/ui.multiselect.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="components/plugins/jquery.jqGrid-4.5.4/css/ui.jqgrid.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="components/plugins/jquery-ui-1.10.4/themes/base/jquery.ui.all.css">
+	<link rel="stylesheet" href="components/plugins/jquery-ui-1.10.4/themes/base/jquery.ui.base.css">
+	<link rel="stylesheet" href="components/plugins/jquery-ui-1.10.4/themes/blitzer/jquery.ui.theme.css">
+
+	<script src="components/plugins/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+	<script src="components/plugins/jquery-ui-1.12.1/jquery-ui.js"></script>
+  	<script src="components/plugins/Bootstrap/js/bootstrap.min.js"></script>
+  	<script src="components/plugins/datepicker/js/bootstrap-datepicker.min.js"></script>
+  	<script src="components/plugins/jqGrid/js/jquery.jqGrid.min.js"></script>
+  	<script src="components/js/global.js"></script>
+	<script src="components/js/daybook.js"></script>
+</head>
+<body>
+
+<table id="grid" style="left:30px;"></table>
+<div class="row" id="entry" style="position:fixed;left:40px;bottom:10px;display:none;">
+	<input type="text" id="date" class="date" style="font-size:14pt !important; width:225px; text-align:center;">
+	<!--<div class="ui-widget">-->
+	<input type="text" id="entity" style="font-size:14pt !important; width:260px; text-align:center;" autofocus>
+	<!--</div>-->
+	<input type="text" id="debit" style="font-size:14pt !important; width:200px; text-align:center;">
+	<input type="text" id="credit" style="font-size:14pt !important; width:200px; text-align:center;">
+	<input type="text" id="desc" style="font-size:14pt !important; width:400px; text-align:center;">
+</div>
+	<!-- Add dialog -->
+  <div class="modal fade" id="addNew" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style = "color:white;background:#8775a7;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Add new entity</h4>
+        </div>
+        
+        <div class="modal-body">
+          <div class=" row ">
+      		<div class="col-sm-6">
+      		<input  type="text" class="form-control" id="newEntity" placeholder="Enter Entity Name" onkeydown="if (event.keyCode == 13) document.getElementById('addButton').click()">
+			</div>
+			<div class="col-sm-6">
+      		<select class="form-control" id="type" onkeydown="if (event.keyCode == 13) document.getElementById('addButton').click()">
+        			<option value="debtor">Debtor</option>
+        			<option value="creditor">Creditor</option>
+        		</select>
+        		</div>
+    		</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="addButton" class="btn btn-success">Add</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>

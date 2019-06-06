@@ -1,0 +1,141 @@
+/*
+	Author : D.Vivekanandhan
+*/
+body.login
+{
+	background: url("../images/back.jpg") no-repeat fixed;
+	background-size: 100% 100%;
+}
+div.login
+{
+	width: 250px;
+	position: fixed;
+    	bottom: 80px;
+    	left: 80px;
+}
+.active > a
+{
+	background-color: purple !important;
+}
+.nav > li.active > a{
+    position: relative;
+    display: block;
+    background-color:purple !important;
+}
+
+.ui-jqgrid-view,.ui-jqgrid
+{
+	position: fixed !important;
+    	left: 30px !important;
+}
+.ui-jqgrid .ui-jqgrid-bdiv
+{
+	border-bottom-width: 1px !important;
+ 	border-bottom-style: solid !important;
+}
+.ui-widget-content .ui-state-default
+{
+	background-color: #8775a7 !important;
+}
+#grid{
+ font-family:'Arial', Helvetica, sans-serif !important;
+ font-size:16px !important;
+ border-width: 1px !important;
+ border-style: solid !important;
+}
+th{
+ font-weight:bold !important;
+}
+.ui-jqgrid tr.ui-row-ltr td {
+    border-bottom-width: 1px !important;
+    border-right-width: 1px !important;
+    border-right-color: #D2D2D2 !important;
+    border-left-width: 1px !important;
+    border-left-color: #D2D2D2 !important;
+    border-bottom-color: #BFBFBF !important;
+    border-bottom-style: solid !important;
+    border-right-style: solid !important;
+    border-left-style: solid !important;
+    padding-left: 5px !important;
+}
+
+.ui-menu-item, .ui-autocomplete-loading, .ui-menu, .ui-front
+{
+	background:none !important;
+	background-color:#d9d9d9 !important;
+}
+.ui-menu .ui-menu-item {
+    list-style-image: none !important;
+}
+#alert
+{
+	background-color: #80ff80;
+	color: green;
+	position: fixed;
+	bottom:205px;
+	left: 945px;
+	border-radius: 3px;
+	opacity: 0.75;
+}
+#err
+{
+	background-color: #ff6666;
+	color: red;
+	position: fixed;
+	bottom:205px;
+	left: 945px;
+	border-radius: 3px;
+	opacity: 0.75;
+}
+#date,#entity,#debit,#credit,#desc
+{
+	border-width: 1px !important;
+	border-color: #BFBFBF !important;
+	border-style: solid !important;
+	border-radius: 5px !important;
+}
+
+#bar
+{
+	width:100%;
+	height:430px;
+	background-color: #e6e6e6;
+	overflow: auto !important;
+}
+.thead
+{
+	background:grey;
+	text-align:center;
+	color:white;
+	margin: 10px 1px;
+	border-radius: 4px;
+	padding:10px;
+}
+.erow, .inrow
+{
+	margin-top:7px;
+}
+.narr
+{
+	position:absolute;
+	bottom:0px;
+}
+#expences_modal > .modal-dialog, #income_modal > .modal-dialog
+{
+	width: 85%!important;
+	height: 90%!important;
+}
+#expences_modal > .modal-dialog >.modal-content, #income_modal > .modal-dialog >.modal-content
+{
+	height: inherit!important;
+}
+#expences_modal > .modal-dialog >.modal-content>.modal-body, #income_modal > .modal-dialog >.modal-content>.modal-body
+{
+	height: 430px!important;
+}
+#expences_modal > .modal-dialog >.modal-content>.modal-footer, #income_modal > .modal-dialog >.modal-content>.modal-footer
+{
+	bottom: 0px!important;
+	position: absolute!important;
+	right: 0px!important;
+}
